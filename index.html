@@ -432,6 +432,36 @@ nav a.book-now:hover {
         .testimonial-slider { height: 280px; }
         .form-container { padding: 1.5rem; }
       }
+      .dropdown { position: relative; display: inline-block; }
+.dropdown-toggle { cursor: pointer; }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  min-width: 220px;
+  z-index: 999;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 0.7rem 1.2rem;
+  color: var(--text) !important;
+  font-size: 0.9rem;
+  margin: 0;
+  border-radius: 0;
+}
+.dropdown-menu a:hover {
+  background: #f0f5ff;
+  color: var(--primary) !important;
+  padding-left: 1.5rem;
+}
+.dropdown-menu a::after { display: none; }
+.dropdown:hover .dropdown-menu { display: block; }
     </style>
     <script type="application/ld+json">
 {
@@ -456,7 +486,6 @@ nav a.book-now:hover {
     "https://instagram.com/nanofixcpt",
     "https://web.facebook.com/profile.php?id=61590679109345",
     "https://www.linkedin.com/in/nano-fix-257091379/"
-  ]
 }
 </script>
   </head>
@@ -465,13 +494,27 @@ nav a.book-now:hover {
     <header>
       <img src="Nanofix logo.png" alt="NanoFix Logo" width="50" height="50" style="vertical-align: middle; border-radius: 10px;">
       <h1>NanoFix</h1>
-      <nav>
-        <a href="#services">Services</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#process">How It Works</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="book-now">Book Now</a>
-      </nav>
+     <nav>
+  <div class="dropdown">
+    <a href="#services" class="dropdown-toggle">Services ▾</a>
+    <div class="dropdown-menu">
+      <a href="/screen-repair/">Screen Repair</a>
+      <a href="/battery-replacement/">Battery Replacement</a>
+      <a href="/charging-port-repair/">Charging Port Repair</a>
+      <a href="/camera-repair/">Camera Repair</a>
+      <a href="/water-damage-repair/">Water Damage Repair</a>
+      <a href="/motherboard-repair/">Motherboard Repair</a>
+      <a href="/iphone-repair/">iPhone Repair</a>
+      <a href="/samsung-repair/">Samsung Repair</a>
+      <a href="/macbook-repair/">MacBook Repair</a>
+      <a href="/laptop-repair/">Laptop Repair</a>
+    </div>
+  </div>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#process">How It Works</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact" class="book-now">Book Now</a>
+</nav>
     </header>
 
     <!-- ============ HERO ============ -->
