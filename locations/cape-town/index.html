@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Phone Repair Cape Town & Surrounding Suburbs | NanoFix Service Area</title>
@@ -22,7 +22,7 @@
   "url": "https://nanofix.co.za",
   "telephone": "+27613054936",
   "email": "nanofixcpt@gmail.com",
-  "image": "https://nanofix.co.za/Nanofix logo.png",
+  "image": "https://nanofix.co.za/nanofix-logo.png",
   "priceRange": "R499 – R3448",
   "openingHours": "Mo-Sa 08:00-20:00",
   "address": {
@@ -145,20 +145,23 @@ nav a.book-now:hover { background:var(--primary-dark); transform:translateY(-2px
 .zone-icon { width:44px; height:44px; background:#e8f0ff; border-radius:12px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
 .zone-icon i { color:var(--primary); font-size:1.2rem; }
 .zone-header h4 { font-size:1.1rem; font-weight:700; color:var(--text); }
-.zone-areas { display:flex; flex-wrap:wrap; gap:0.5rem; }
-.zone-tag { background:#f0f5ff; border:1px solid #d0e0ff; border-radius:8px; padding:0.3rem 0.8rem; font-size:0.82rem; font-weight:500; color:var(--primary); }
+.zone-areas { display:grid; grid-template-columns:repeat(2,1fr); gap:0.7rem 1.2rem; }
+.zone-tag { font-size:0.95rem; font-weight:500; color:var(--text); }
 
 /* SERVICES SECTION */
 .services-section { background:var(--background-alt); }
 .services-inner { max-width:1200px; margin:0 auto; padding:4rem 1.5rem; }
 .services-inner h3 { text-align:center; font-size:2rem; margin-bottom:0.8rem; font-weight:700; position:relative; }
 .services-inner h3::after { content:''; display:block; width:60px; height:4px; background:var(--primary); margin:10px auto 2.5rem; border-radius:2px; }
-.services-grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
-.service-card { background:white; border:1px solid #e0e9ff; border-radius:16px; padding:1.4rem 1.5rem; display:flex; align-items:center; gap:1rem; transition:var(--transition); box-shadow:var(--shadow); }
-.service-card:hover { background:#f0f5ff; transform:translateY(-3px); border-color:var(--primary); }
-.service-card i { color:var(--primary); font-size:1.4rem; flex-shrink:0; }
-.service-card div span { font-size:0.95rem; font-weight:600; color:var(--text); display:block; }
-.service-card div small { font-size:0.8rem; color:var(--muted); }
+.svc-grid { display:grid; gap:1.5rem; grid-template-columns:repeat(5,1fr); }
+.svc-card { display:block; background:var(--background); padding:2rem 1.2rem; border-radius:var(--radius); box-shadow:var(--shadow); text-align:center; transition:var(--transition); border:1px solid rgba(0,0,0,0.05); color:inherit; }
+.svc-card:hover { transform:translateY(-10px); box-shadow:0 12px 20px rgba(0,0,0,0.12); }
+.svc-card i { font-size:2.4rem; color:var(--primary); margin-bottom:1.2rem; display:block; }
+.svc-card h4 { font-size:1.1rem; margin-bottom:0.6rem; font-weight:600; color:var(--text); }
+.svc-card p { font-size:0.92rem; color:var(--text-light); }
+.svc-card small { display:block; margin-top:0.8rem; font-size:0.85rem; font-weight:600; color:var(--primary); }
+@media(max-width:1100px) { .svc-grid { grid-template-columns:repeat(2,1fr); } }
+@media(max-width:560px) { .svc-grid { grid-template-columns:1fr; } }
 
 /* HOW IT WORKS */
 .how-section { max-width:1200px; margin:0 auto; padding:4rem 1.5rem; }
@@ -206,7 +209,7 @@ footer { padding:3rem 2rem 2rem; background:#1a1f2c; text-align:center; font-siz
 <!-- HEADER -->
 <header>
   <a href="/" style="display:flex;align-items:center;gap:0.6rem;text-decoration:none;">
-    <img src="../../nanofix logo.png" alt="NanoFix Logo" width="50" height="50" style="border-radius:10px;">
+    <img src="/nanofix-logo.png" alt="NanoFix Logo" width="50" height="50" style="border-radius:10px;">
     <h1>NanoFix</h1>
   </a>
   <nav>
@@ -225,6 +228,7 @@ footer { padding:3rem 2rem 2rem; background:#1a1f2c; text-align:center; font-siz
         <a href="/laptop-repair/">Laptop Repair</a>
       </div>
     </div>
+    <a href="/locations/cape-town/">Service Area</a>
     <a href="/#testimonials">Testimonials</a>
     <a href="/#process">How It Works</a>
     <a href="/#faq">FAQ</a>
@@ -260,7 +264,7 @@ footer { padding:3rem 2rem 2rem; background:#1a1f2c; text-align:center; font-siz
   <h3>Our Service Area</h3>
   <p class="sub">We cover the full Cape Town metro area within a 25km radius of the CBD</p>
   <div class="map-wrapper">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d847632.0979553969!2d17.996668141737253!3d-33.9137811208571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2sCape%20Town!5e0!3m2!1sen!2sza!4v1792534014046!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="NanoFix service area Cape Town"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d847632.0979553969!2d17.996668141737253!3d-33.9137811208571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2sCape%20Town!5e0!3m2!1sen!2sza!4v1792534014046!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="NanoFix service area Cape Town"></iframe>
   </div>
   <p style="text-align:center;margin-top:1.2rem;font-size:0.9rem;color:var(--muted);">Not sure if we cover your area? <a href="https://wa.me/27613054936">WhatsApp us</a> and we'll confirm within minutes.</p>
 </div>
@@ -281,7 +285,7 @@ footer { padding:3rem 2rem 2rem; background:#1a1f2c; text-align:center; font-siz
         <span class="zone-tag">De Waterkant</span>
         <span class="zone-tag">Woodstock</span>
         <span class="zone-tag">Salt River</span>
-        <span class="zone-tag">V&A Waterfront</span>
+        <span class="zone-tag">V&amp;A Waterfront</span>
       </div>
     </div>
 
@@ -368,46 +372,66 @@ footer { padding:3rem 2rem 2rem; background:#1a1f2c; text-align:center; font-siz
 <div class="services-section">
   <div class="services-inner">
     <h3>Services Available Across All Areas</h3>
-    <div class="services-grid">
-      <a href="/screen-repair/" class="service-card">
+    <div class="svc-grid">
+      <a href="/screen-repair/" class="svc-card">
         <i class="fas fa-mobile-alt"></i>
-        <div><span>Screen Repair</span><small>From R949</small></div>
+        <h4>Screen Repair</h4>
+        <p>Cracked or unresponsive screen? Fixed fast with premium parts.</p>
+        <small>From R949</small>
       </a>
-      <a href="/battery-replacement/" class="service-card">
+      <a href="/battery-replacement/" class="svc-card">
         <i class="fas fa-battery-half"></i>
-        <div><span>Battery Replacement</span><small>From R649</small></div>
+        <h4>Battery Replacement</h4>
+        <p>Battery draining quickly? Replaced with quality parts.</p>
+        <small>From R649</small>
       </a>
-      <a href="/charging-port-repair/" class="service-card">
+      <a href="/charging-port-repair/" class="svc-card">
         <i class="fas fa-plug"></i>
-        <div><span>Charging Port Repair</span><small>From R499</small></div>
+        <h4>Charging Port Repair</h4>
+        <p>Loose or not charging? We replace the port quickly.</p>
+        <small>From R499</small>
       </a>
-      <a href="/camera-repair/" class="service-card">
+      <a href="/camera-repair/" class="svc-card">
         <i class="fas fa-camera"></i>
-        <div><span>Camera Repair</span><small>From R899</small></div>
+        <h4>Camera Repair</h4>
+        <p>Blurry or broken camera? We restore the clarity.</p>
+        <small>From R899</small>
       </a>
-      <a href="/water-damage-repair/" class="service-card">
+      <a href="/water-damage-repair/" class="svc-card">
         <i class="fas fa-water"></i>
-        <div><span>Water Damage Repair</span><small>From R1,999</small></div>
+        <h4>Water Damage Repair</h4>
+        <p>Liquid damage? Fast response and an honest diagnosis.</p>
+        <small>From R1,999</small>
       </a>
-      <a href="/motherboard-repair/" class="service-card">
+      <a href="/motherboard-repair/" class="svc-card">
         <i class="fas fa-microchip"></i>
-        <div><span>Motherboard Repair</span><small>From R3,448</small></div>
+        <h4>Motherboard Repair</h4>
+        <p>Complex hardware faults diagnosed and repaired.</p>
+        <small>From R3,448</small>
       </a>
-      <a href="/iphone-repair/" class="service-card">
+      <a href="/iphone-repair/" class="svc-card">
         <i class="fab fa-apple"></i>
-        <div><span>iPhone Repair</span><small>All models</small></div>
+        <h4>iPhone Repair</h4>
+        <p>Screens, batteries, ports and more for common iPhone models.</p>
+        <small>All models</small>
       </a>
-      <a href="/samsung-repair/" class="service-card">
+      <a href="/samsung-repair/" class="svc-card">
         <i class="fas fa-mobile-alt"></i>
-        <div><span>Samsung Repair</span><small>All models</small></div>
+        <h4>Samsung Repair</h4>
+        <p>Galaxy screens, batteries, charging and camera repairs.</p>
+        <small>All models</small>
       </a>
-      <a href="/macbook-repair/" class="service-card">
+      <a href="/macbook-repair/" class="svc-card">
         <i class="fas fa-laptop"></i>
-        <div><span>MacBook Repair</span><small>All models</small></div>
+        <h4>MacBook Repair</h4>
+        <p>Battery, screen, liquid damage and no-power faults.</p>
+        <small>Free quote</small>
       </a>
-      <a href="/laptop-repair/" class="service-card">
+      <a href="/laptop-repair/" class="svc-card">
         <i class="fas fa-laptop-code"></i>
-        <div><span>Laptop Repair</span><small>All brands</small></div>
+        <h4>Laptop Repair</h4>
+        <p>HP, Dell, Lenovo, Asus and more. Honest advice first.</p>
+        <small>Free quote</small>
       </a>
     </div>
   </div>
