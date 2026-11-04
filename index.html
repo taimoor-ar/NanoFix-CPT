@@ -483,6 +483,35 @@ nav a.book-now:hover {
   #pricing > div:first-of-type,
   #process .grid { grid-template-columns: 1fr !important; }
 }
+   /* Hero: dark professional look + 3 buttons */
+html { scroll-behavior: smooth; }
+.hero {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(0,123,255,0.35) 0%, transparent 45%),
+    linear-gradient(135deg, #0b1730 0%, #12285a 55%, #0f3d91 100%);
+  padding: 6rem 1rem 5rem;
+}
+.hero::before { background: rgba(0,123,255,0.22); }
+.hero::after { background: rgba(255,107,0,0.12); }
+.hero h2 { color: #ffffff; }
+.hero p { color: rgba(255,255,255,0.85); }
+.hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2rem; }
+.hero-btn {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  padding: 0.95rem 1.9rem; border-radius: 50px;
+  font-weight: 600; font-size: 1.05rem; text-decoration: none;
+  border: 2px solid transparent; transition: all 0.3s ease;
+}
+.hero-btn:hover { transform: translateY(-3px); }
+.hero-btn-wa { background: #25d366; color: #fff; box-shadow: 0 4px 15px rgba(37,211,102,0.35); }
+.hero-btn-wa:hover { background: #1ebe5b; }
+.hero-btn-call { background: transparent; color: #fff; border-color: rgba(255,255,255,0.6); }
+.hero-btn-call:hover { background: #fff; color: #0b1730; }
+.hero-btn-book { background: var(--primary); color: #fff; box-shadow: 0 4px 15px rgba(0,123,255,0.4); }
+.hero-btn-book:hover { background: var(--primary-dark); }
+@media (max-width: 560px) {
+  .hero-btn { width: 100%; max-width: 320px; justify-content: center; }
+} 
     </style>
     <script type="application/ld+json">
 {
