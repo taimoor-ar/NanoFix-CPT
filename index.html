@@ -512,6 +512,16 @@ html { scroll-behavior: smooth; }
 @media (max-width: 560px) {
   .hero-btn { width: 100%; max-width: 320px; justify-content: center; }
 } 
+   /* Apple-style font */
+* { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", "Helvetica Neue", Arial, sans-serif; }
+
+/* Hero: plain, clean background (no gradient, no shapes) */
+.hero { background: #f5f5f7; }
+.hero::before, .hero::after { display: none; }
+.hero h2 { color: #1d1d1f; font-weight: 700; letter-spacing: -0.02em; }
+.hero p { color: #6e6e73; }
+.hero-btn-call { background: transparent; color: #1d1d1f; border-color: #1d1d1f; }
+.hero-btn-call:hover { background: #1d1d1f; color: #fff; }
     </style>
     <script type="application/ld+json">
 {
