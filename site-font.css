@@ -2,14 +2,15 @@
 html, body, * { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", "Helvetica Neue", Arial, sans-serif; }
 header h1 { font-family: 'Raleway', sans-serif; }
 
-/* Slim phone header */
+/* Phone header: logo on top, menu links in one swipeable row */
 @media (max-width:768px) {
-  header { position:static; flex-direction:row; justify-content:space-between; padding:0.6rem 1rem; }
+  header { position:static; flex-direction:column; align-items:stretch; padding:0.5rem 1rem; }
   header h1 { margin-bottom:0; font-size:1.3rem; }
-  nav .dropdown, nav a:not(.book-now) { display:none; }
-  nav a.book-now { margin:0; padding:0.45rem 1.1rem; font-size:0.9rem; }
+  nav { display:flex; flex-wrap:nowrap; justify-content:flex-start; align-items:center; gap:1rem; overflow-x:auto; white-space:nowrap; padding:0.4rem 0; -webkit-overflow-scrolling:touch; }
+  nav a, nav .dropdown { margin:0; font-size:0.9rem; flex-shrink:0; }
+  nav .dropdown-menu { display:none !important; }
+  nav a.book-now { padding:0.35rem 1rem; }
 }
-
 /* Smaller everything. 87.5% = 14px base. Smaller: 80%. Bigger: 93.75% */
 html { font-size: 87.5%; }
 
